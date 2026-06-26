@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save Our Wildlife</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Save Our Wildlife</h1>
+  </header>
+
+  <main>
+    <section class="video-section" aria-labelledby="video-heading">
+      <h2 id="video-heading" class="visually-hidden">Promotional Video</h2>
+
+      <video id="wildlifeVideo" controls width="100%" aria-describedby="video-desc">
+        <source src="wildlife.mp4" type="video/mp4">
+        Your browser does not support the video tag. Please update your browser to view this content.
+      </video>
+
+      <p id="video-desc">
+        Watch how your support helps protect endangered species and restore
+        natural habitats around the world. Every action counts towards a
+        sustainable future for wildlife.
+      </p>
+
+      <button id="toggleBtn" type="button" aria-pressed="false">
+        Pause &amp; Hide Video
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Wildlife Conservation Organization. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

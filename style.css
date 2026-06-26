@@ -1,0 +1,114 @@
+/* ===== Base / Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f4f7f2;
+  color: #1b2e1f;
+  line-height: 1.6;
+}
+
+/* ===== Accessibility helper ===== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #2e5d34;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+/* ===== Main content ===== */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.video-section {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+#video-desc {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* ===== Button ===== */
+#toggleBtn {
+  display: block;
+  margin: 1.2rem auto 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #2e5d34;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#toggleBtn:hover,
+#toggleBtn:focus {
+  background-color: #234526;
+}
+
+/* Visible focus outline for keyboard users */
+#toggleBtn:focus-visible {
+  outline: 3px solid #ffb300;
+  outline-offset: 2px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #4a4a4a;
+}
+
+/* ===== Responsive breakpoints ===== */
+@media (max-width: 600px) {
+  .video-section {
+    padding: 1rem;
+  }
+
+  #toggleBtn {
+    width: 100%;
+  }
+}
+
+/* ===== Reduced motion preference ===== */
+@media (prefers-reduced-motion: reduce) {
+  #toggleBtn {
+    transition: none;
+  }
+}
